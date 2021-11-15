@@ -54,6 +54,7 @@ export default function Main() {
         setScore(score + 1);
       } else if (computerChoice === "paper") {
         setMsg("You Lost");
+        setScore(score - 1);
       }
     } else if (playersChoice === "paper") {
       if (computerChoice === "paper") {
@@ -63,6 +64,7 @@ export default function Main() {
         setScore(score + 1);
       } else if (computerChoice === "scissors") {
         setMsg("You Lost");
+        setScore(score - 1);
       }
     } else if (playersChoice === "scissors") {
       if (computerChoice === "scissors") {
@@ -72,6 +74,7 @@ export default function Main() {
         setScore(score + 1);
       } else if (computerChoice === "rock") {
         setMsg("You Lost");
+        setScore(score - 1);
       }
     }
   };
